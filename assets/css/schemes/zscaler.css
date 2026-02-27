@@ -1,0 +1,38 @@
+/* Zscaler Deploy Kit — Custom Color Scheme */
+/* Primary: Zscaler Blue #0078D4 | Secondary: Cyan #00A4EF | Accent: Gold #FFB900 */
+:root {
+  --color-neutral: 255, 255, 255;
+  /* Slate grays — dark cybersecurity aesthetic */
+  --color-neutral-50: 248, 250, 252;
+  --color-neutral-100: 241, 245, 249;
+  --color-neutral-200: 226, 232, 240;
+  --color-neutral-300: 203, 213, 225;
+  --color-neutral-400: 148, 163, 184;
+  --color-neutral-500: 100, 116, 139;
+  --color-neutral-600: 71, 85, 105;
+  --color-neutral-700: 51, 65, 85;
+  --color-neutral-800: 22, 28, 45;
+  --color-neutral-900: 10, 14, 28;
+  /* Zscaler Blue */
+  --color-primary-50: 230, 244, 255;
+  --color-primary-100: 204, 233, 255;
+  --color-primary-200: 153, 210, 255;
+  --color-primary-300: 102, 188, 255;
+  --color-primary-400: 51, 165, 240;
+  --color-primary-500: 0, 120, 212;
+  --color-primary-600: 0, 100, 180;
+  --color-primary-700: 0, 80, 150;
+  --color-primary-800: 0, 60, 120;
+  --color-primary-900: 0, 45, 90;
+  /* Zscaler Cyan */
+  --color-secondary-50: 230, 250, 255;
+  --color-secondary-100: 204, 244, 255;
+  --color-secondary-200: 153, 228, 255;
+  --color-secondary-300: 102, 212, 250;
+  --color-secondary-400: 51, 196, 245;
+  --color-secondary-500: 0, 164, 239;
+  --color-secondary-600: 0, 135, 200;
+  --color-secondary-700: 0, 108, 165;
+  --color-secondary-800: 0, 82, 130;
+  --color-secondary-900: 0, 58, 95;
+}

@@ -1,0 +1,18 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "L&L DarkSkies"
+
+[params]
+  displayName = "English"
+  isoCode = "en"
+  dateFormat = "January 2, 2006"
+  description = "Zero Trust, AI, and Infrastructure Automation. Engineering blog by LJ."
+
+[params.author]
+  name = "LJ"
+  headline = "L&L DarkSkies — AI Implementation Services"
+  bio = "Building Zero Trust infrastructure automation for enterprises. Zscaler, Terraform, AI-driven deployment, and cloud security engineering."
+  links = [
+    { github = "https://github.com/popz2049-afk" },
+  ]
