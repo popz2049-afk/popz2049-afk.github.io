@@ -6,6 +6,7 @@ description: "How Zscaler Zero Trust Branch eliminates branch appliance sprawl b
 summary: "Zscaler Zero Trust Branch replaces five categories of branch appliances -- SD-WAN, firewalls, NAC, VPN concentrators, and load balancers -- with a unified Zero Trust architecture. This post covers the branch problem, ZT appliance hardware, the Airgap acquisition for IoT/OT segmentation, and the dedicated ztc Terraform provider."
 tags: ["ztb", "sd-wan", "branch", "iot", "ot", "airgap"]
 categories: ["Deep Dives"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

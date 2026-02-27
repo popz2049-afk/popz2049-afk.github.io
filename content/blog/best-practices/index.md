@@ -6,6 +6,7 @@ description: "Comprehensive best practices for deploying Zscaler ZIA, ZPA, ZCC, 
 summary: "Best practices for Zscaler deployments organized by product -- covering ZIA traffic forwarding, URL filtering, SSL inspection, ZPA app segmentation, ZCC rollout strategy, ZDX monitoring, and operational guidelines for Terraform-based infrastructure management."
 tags: ["best-practices", "terraform", "zia", "zpa"]
 categories: ["Technical"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

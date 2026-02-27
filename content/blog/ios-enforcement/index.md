@@ -6,6 +6,7 @@ description: "Everything you need to know about deploying Zscaler Client Connect
 summary: "A comprehensive guide to iOS strict enforcement with Zscaler Client Connector. Covers supervised mode requirements, Apple certificate pinning bypasses, tunnel modes, MDM deployment for Intune/Jamf/Workspace ONE, common issues, and a full testing checklist."
 tags: ["ios", "strict-enforcement", "zcc", "mobile", "mdm"]
 categories: ["Guides"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

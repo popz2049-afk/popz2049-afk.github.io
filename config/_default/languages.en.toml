@@ -1,18 +1,18 @@
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "L&L DarkSkies"
+title = "The Agentic Dev"
 
 [params]
   displayName = "English"
   isoCode = "en"
   dateFormat = "January 2, 2006"
-  description = "Zero Trust, AI, and Infrastructure Automation. Engineering blog by LJ."
+  description = "One developer's journey building real-world projects with AI agents. Claude Code, Codex, Gemini CLI — and the projects they help ship."
 
 [params.author]
   name = "LJ"
-  headline = "L&L DarkSkies — AI Implementation Services"
-  bio = "Building Zero Trust infrastructure automation for enterprises. Zscaler, Terraform, AI-driven deployment, and cloud security engineering."
+  headline = "L&L DarkSkies — Building with AI Agents"
+  bio = "Documenting the journey of building production software with agentic AI. From zero trust infrastructure to whatever comes next — one project at a time."
   links = [
     { github = "https://github.com/popz2049-afk" },
   ]

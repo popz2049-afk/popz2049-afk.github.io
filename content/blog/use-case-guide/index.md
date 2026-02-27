@@ -6,6 +6,7 @@ description: "Complete reference for all 23 pre-built Zscaler use cases covering
 summary: "A comprehensive reference for every use case in the Deploy Kit -- 13 ZIA and 10 ZPA configurations covering geo-blocking, SaaS control, DLP, SSL inspection, CMMC compliance, Zero Trust architecture, and more. Each entry details what it creates, why, and how to customize it."
 tags: ["use-cases", "terraform", "zia", "zpa", "compliance"]
 categories: ["Guides"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

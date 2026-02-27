@@ -6,6 +6,7 @@ description: "A practical guide to migrating from Zscaler's legacy per-product a
 summary: "Zscaler is deprecating legacy per-product authentication in favor of ZIdentity, a centralized OAuth2 identity service. This guide covers what ZIdentity changes, the OneAPI authentication flow, Terraform provider v4.0.0+ configuration, migration steps, key deadlines, and how the Deploy Kit supports both authentication methods."
 tags: ["zidentity", "oneapi", "authentication", "migration", "oauth2"]
 categories: ["Guides"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

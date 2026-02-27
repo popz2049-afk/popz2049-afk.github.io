@@ -6,6 +6,7 @@ description: "A technical deep dive into the Zscaler Deploy Kit architecture -- 
 summary: "Understand how the Deploy Kit is structured under the hood: the separation between base modules and additive use cases, OneAPI OAuth2 authentication flow, Terraform state management strategy, ZIA API rate limiting, Docker containerized workflow, and TUI architecture."
 tags: ["architecture", "terraform", "design"]
 categories: ["Technical"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

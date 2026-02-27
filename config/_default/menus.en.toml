@@ -6,14 +6,19 @@
   weight = 10
 
 [[main]]
+  name = "Projects"
+  pageRef = "series"
+  weight = 20
+
+[[main]]
   name = "Docs"
   pageRef = "docs"
-  weight = 20
+  weight = 30
 
 [[main]]
   name = "Tags"
   pageRef = "tags"
-  weight = 30
+  weight = 40
 
 [[main]]
   identifier = "github"
@@ -29,6 +34,11 @@
   weight = 10
 
 [[footer]]
+  name = "Projects"
+  pageRef = "series"
+  weight = 20
+
+[[footer]]
   name = "Categories"
   pageRef = "categories"
-  weight = 20
+  weight = 30

@@ -1,4 +1,4 @@
 ---
 title: "Blog"
-description: "Guides, tutorials, and deep dives into Zscaler Zero Trust deployment with Infrastructure-as-Code"
+description: "The journey of building production software with AI agents — guides, deep dives, and lessons learned"
 ---

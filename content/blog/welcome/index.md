@@ -6,6 +6,7 @@ description: "An open-source Infrastructure-as-Code toolkit that turns Zscaler Z
 summary: "Zscaler Deploy Kit is a battle-tested IaC toolkit with 23 pre-built use cases, a guided TUI, and AI-agent integration. It was built from a live production tenant to solve the real complexity of Zscaler Zero Trust deployments."
 tags: ["announcement", "zero-trust", "terraform"]
 categories: ["Announcements"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

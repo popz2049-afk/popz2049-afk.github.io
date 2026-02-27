@@ -6,6 +6,7 @@ description: "How the Deploy Kit's 7 compliance use cases map to CMMC Level 2 an
 summary: "The Zscaler Deploy Kit includes 7 compliance-focused use cases that directly implement CMMC Level 2 / NIST 800-171 controls. This post maps each use case to specific control families and explains why Terraform-based compliance is more auditable, repeatable, and defensible than manual configuration."
 tags: ["cmmc", "nist-800-171", "compliance", "dfars", "cui"]
 categories: ["Compliance"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

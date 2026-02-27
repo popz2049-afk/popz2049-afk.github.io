@@ -6,6 +6,7 @@ description: "Common issues, error messages, and fixes for Zscaler Terraform dep
 summary: "A comprehensive troubleshooting reference for Zscaler Terraform deployments. Covers ZIA API timeouts, NROD issues, SSL rule name limits, state lock recovery, drift detection, ZPA connector problems, OAuth2 authentication failures, and provider schema gotchas."
 tags: ["troubleshooting", "debugging", "terraform", "zia-api"]
 categories: ["Technical"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

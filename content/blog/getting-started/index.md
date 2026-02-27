@@ -6,6 +6,7 @@ description: "A step-by-step guide from zero to your first Zscaler deployment us
 summary: "Walk through every step from API credential setup to deploying your first use case. Covers prerequisites, setup scripts, TUI launch, and a recommended first deployment with verification in the Admin Portal."
 tags: ["tutorial", "getting-started", "terraform", "setup"]
 categories: ["Tutorials"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

@@ -6,6 +6,7 @@ description: "How Zscaler Deception Technology uses decoys and breadcrumbs to de
 summary: "Zscaler Deception Technology deploys decoys and breadcrumbs across your environment to detect lateral movement with near-zero false positives. This post covers how it works, its ITDR integration, GenAI decoys, and why it remains portal-only with no Terraform or API support."
 tags: ["deception", "lateral-movement", "itdr", "active-defense"]
 categories: ["Deep Dives"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

@@ -6,6 +6,7 @@ description: "How Zscaler's Browser Access and Cloud Browser Isolation products 
 summary: "Zscaler offers two complementary browser isolation products: ZPA Browser Access for clientless private app access and Cloud Browser Isolation (CBI) for internet traffic isolation. This post covers Turbo Mode, data controls, Smart Browser Isolation, and the Terraform resources that automate both products."
 tags: ["browser-isolation", "cbi", "byod", "contractor", "browser-access"]
 categories: ["Deep Dives"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 

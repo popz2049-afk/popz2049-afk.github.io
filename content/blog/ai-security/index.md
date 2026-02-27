@@ -6,6 +6,7 @@ description: "How Zscaler's SPLX acquisition and AI Security Suite address shado
 summary: "Zscaler acquired SplxAI in November 2025 and launched the AI Security Suite in January 2026, delivering shadow AI detection, GenAI app control, and inline prompt DLP. This post covers the three pillars of AI security, what is automatable via Terraform, and how the Deploy Kit's UC14 use case implements GenAI control policies."
 tags: ["ai-security", "genai", "dlp", "shadow-ai", "splx"]
 categories: ["Deep Dives"]
+series: ["Zscaler Deploy Kit"]
 showTableOfContents: true
 ---
 
