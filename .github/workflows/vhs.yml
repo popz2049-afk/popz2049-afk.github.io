@@ -12,14 +12,16 @@ permissions:
 jobs:
   render:
     runs-on: ubuntu-latest
+    env:
+      VHS_NO_SANDBOX: "true"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install ffmpeg and ttyd
+      - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg gifsicle
+          sudo apt-get install -y ffmpeg gifsicle chromium-browser
           wget -q https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64 -O /usr/local/bin/ttyd
           chmod +x /usr/local/bin/ttyd
 
@@ -30,11 +32,6 @@ jobs:
           sudo find . -maxdepth 2 -name vhs -type f -exec mv {} /usr/local/bin/ \;
           chmod +x /usr/local/bin/vhs
           vhs --version
-
-      - name: Install Chromium
-        uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: stable
 
       - name: Render demos
         run: |
