@@ -1,0 +1,21 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "Terminal demo" -}}
+{{- $type := .Get "type" | default "gif" -}}
+{{- if eq $type "gif" -}}
+<figure class="vhs-demo">
+  <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" style="width:100%;border-radius:8px;border:1px solid #2d3748;" />
+  {{- with .Get "caption" }}
+  <figcaption style="text-align:center;color:#94a3b8;font-size:0.875rem;margin-top:0.5rem;">{{ . }}</figcaption>
+  {{- end }}
+</figure>
+{{- else -}}
+<figure class="vhs-demo">
+  <video autoplay loop muted playsinline style="width:100%;border-radius:8px;border:1px solid #2d3748;">
+    <source src="{{ $src }}" type="video/{{ $type }}">
+    Your browser does not support the video tag.
+  </video>
+  {{- with .Get "caption" }}
+  <figcaption style="text-align:center;color:#94a3b8;font-size:0.875rem;margin-top:0.5rem;">{{ . }}</figcaption>
+  {{- end }}
+</figure>
+{{- end -}}

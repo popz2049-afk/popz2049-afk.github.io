@@ -1,0 +1,43 @@
+name: Render VHS Demos
+
+on:
+  push:
+    paths:
+      - 'demos/*.tape'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup VHS
+        uses: charmbracelet/vhs-action@v2
+
+      - name: Render all demos
+        run: |
+          mkdir -p static/videos
+          for tape in demos/*.tape; do
+            [ -f "$tape" ] || continue
+            name=$(basename "$tape" .tape)
+            [ "$name" = "test" ] && continue
+            echo "Rendering: $name"
+            vhs "$tape"
+          done
+
+      - name: Commit rendered videos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/videos/
+          if git diff --cached --quiet; then
+            echo "No new renders to commit"
+          else
+            git commit -m "Render VHS demo videos [automated]"
+            git push
+          fi
