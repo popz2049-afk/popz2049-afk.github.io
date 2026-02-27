@@ -16,48 +16,32 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
+      - name: Render demo 01
+        uses: charmbracelet/vhs-action@v2
+        with:
+          path: demos/01-deploy-kit-intro.tape
+          install-fonts: true
 
-      - name: Install ttyd
-        run: |
-          wget -q https://github.com/tsl0922/ttyd/releases/download/1.7.7/ttyd.x86_64 -O /usr/local/bin/ttyd
-          chmod +x /usr/local/bin/ttyd
+      - name: Render demo 02
+        uses: charmbracelet/vhs-action@v2
+        with:
+          path: demos/02-ai-agent-deploy.tape
 
-      - name: Install VHS
-        run: |
-          wget -q https://github.com/charmbracelet/vhs/releases/download/v0.10.0/vhs_0.10.0_Linux_x86_64.tar.gz
-          tar xzf vhs_0.10.0_Linux_x86_64.tar.gz
-          sudo mv vhs_0.10.0_Linux_x86_64/vhs /usr/local/bin/ 2>/dev/null || sudo find . -name vhs -type f -exec mv {} /usr/local/bin/ \;
-          chmod +x /usr/local/bin/vhs
-          vhs --version
+      - name: Render demo 03
+        uses: charmbracelet/vhs-action@v2
+        with:
+          path: demos/03-compliance-check.tape
 
-      - name: Install Chromium
+      - name: Optimize GIFs
         run: |
-          sudo apt-get install -y chromium-browser || sudo snap install chromium
-
-      - name: Render all demos
-        run: |
-          mkdir -p static/videos
-          for tape in demos/*.tape; do
-            [ -f "$tape" ] || continue
-            name=$(basename "$tape" .tape)
-            [ "$name" = "test" ] && continue
-            echo "Rendering: $name"
-            vhs "$tape"
-            echo "Done: $name"
+          sudo apt-get install -y gifsicle
+          for gif in static/videos/*.gif; do
+            [ -f "$gif" ] || continue
+            gifsicle -O3 --colors 64 "$gif" -o "$gif"
           done
 
       - name: Commit rendered videos
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add static/videos/
-          if git diff --cached --quiet; then
-            echo "No new renders to commit"
-          else
-            git commit -m "Render VHS demo videos [automated]"
-            git push
-          fi
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Render VHS demo videos [automated]"
+          file_pattern: "static/videos/*"
